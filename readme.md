@@ -1,4 +1,4 @@
-# Demo of Azure Function on Docker Container
+# Demo: Azure Function in a Linux Container
 
 ## To create an image:
 * `docker build -f hello-world/Dockerfile -t mxinsp/hello-world:latest . `
