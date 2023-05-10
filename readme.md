@@ -2,6 +2,7 @@
 
 ## To create an image:
 * `docker build -f hello-world/Dockerfile -t mxinsp/hello-world:latest . `
+* The dot `.` at the end of the above command is important.
 
 ## To run a container using the newly created image:
 * `docker run -it --rm -p 8181:80 mxinsp/hello-world:latest`
