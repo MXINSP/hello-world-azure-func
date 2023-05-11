@@ -22,7 +22,7 @@ namespace hello_world
             var response = req.CreateResponse(HttpStatusCode.OK);
             response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
 
-            response.WriteString("Welcome to Azure Functions!!!!!!!!!!!!!!!!!!");
+            response.WriteString($"[{DateTime.Now}] Welcome to Azure Functions");
 
             return response;
         }

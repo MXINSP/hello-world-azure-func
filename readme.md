@@ -9,6 +9,8 @@
 
 ## To run a container using the newly created image:
 * `docker run -it --rm -p 8181:80 mxinsp/hello-world:latest`
+* `docker run -d --rm --name func-hello-world -p 8181:80 -v $(pwd):/var/www/logs mxinsp/hello-world:latest`
+  * If you're using PowerShell, then change `$(pwd)` -> `${pwd}`
 
 ## To save the image to your container registry:
 * `docker push mxinsp/hello-world:latest`
