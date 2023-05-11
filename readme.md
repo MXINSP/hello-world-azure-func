@@ -2,7 +2,8 @@
 
 ## To create an image:
 * `docker build -f hello-world/Dockerfile -t mxinsp/hello-world:latest . `
-  * The dot `.` (Build Context) at the end of the above command is important.
+  * The dot `.` (Build Context) at the end of the above command is important.  
+  * A _build's context_ is the set of files located in the specified PATH or URL.
   * `docker build -t <IMAGE_NAME> .`
   * `docker build -t <REGISTRY>/<IMAGE_NAME>:<TAG> .`
 
