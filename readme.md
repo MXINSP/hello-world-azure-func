@@ -2,9 +2,9 @@
 
 ## To create an image:
 * `docker build -f hello-world/Dockerfile -t mxinsp/hello-world:latest . `
-* The dot `.` (Build Context) at the end of the above command is important.
-* `docker build -t <IMAGE_NAME> .`
-* `docker build -t <REGISTRY>/<IMAGE_NAME>:<TAG> .`
+  * The dot `.` (Build Context) at the end of the above command is important.
+  * `docker build -t <IMAGE_NAME> .`
+  * `docker build -t <REGISTRY>/<IMAGE_NAME>:<TAG> .`
 
 ## To run a container using the newly created image:
 * `docker run -it --rm -p 8181:80 mxinsp/hello-world:latest`
